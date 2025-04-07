@@ -17,7 +17,7 @@ class Node {
 }
 
 public class leetcode100 {
-    public boolean treeres(Node p, Node q) {
+    public boolean isSameTree(Node p, Node q) {
         Queue<Node> a = new LinkedList<>();
         a.offer(p);
         a.offer(q);
@@ -41,13 +41,12 @@ public class leetcode100 {
     public static void main(String[] args) {
         leetcode100 obj = new leetcode100();
 
-        Node tree1 = new Node(1, new Node(2), new Node(3));
-        Node tree2 = new Node(1, new Node(2), new Node(3));
-        System.out.println(obj.treeres(tree1, tree2));
-        
         Node tree5 = new Node(1, new Node(2), new Node(1));
         Node tree6 = new Node(1, new Node(1), new Node(2));
-        System.out.println(obj.treeres(tree5, tree6));
+        System.out.println(obj.isSameTree(tree5, tree6));
 
+        Node tree1 = new Node(1, new Node(2), new Node(3));
+        Node tree2 = new Node(1, new Node(2), new Node(3));
+        System.out.println(obj.isSameTree(tree1, tree2));
     }
 }

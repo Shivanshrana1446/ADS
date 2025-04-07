@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class leetcode66 {
-    public int[] output(int[] a) {
+    public int[] res(int[] a) {
         int n=a.length; 
         for(int i=n-1;i>=0;i--) {
             if(a[i]<9) { 
@@ -18,6 +18,6 @@ public class leetcode66 {
         leetcode66 l = new leetcode66();
         int[] a = {1, 2, 3};
         // int[] b = {9};
-        System.out.print(Arrays.toString(l.output(a)));
+        System.out.print(Arrays.toString(l.res(a)));
     }
 }
